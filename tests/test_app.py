@@ -41,7 +41,7 @@ def test_div():
     assert div(16, 8) == 2
 
 def test_div2():
-    assert div(16, 8) != 3
+    assert div(mult(16, 8), 8) == 16
 
 def test_div3():
-    assert div(16, 8) == div(2, 1)
+    assert div(16, 8) == mult(16, div(1, 8))
