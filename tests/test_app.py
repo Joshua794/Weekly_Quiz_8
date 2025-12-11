@@ -22,4 +22,13 @@ def test_sub2():
     assert sub(10, 6) != 3
 
 def test_sub3():
-    assert sub(10, 6) == -1 * sub(6, 10)
+    assert sub(10, 6) == (-1 * sub(6, 10))
+
+def test_mult():
+    assert mult(7, 8) == 56
+
+def test_mult2():
+    assert mult(7, 8) != 57
+
+def test_mult3():
+    assert mult(7, 8) == mult(8, 7)
